@@ -9,7 +9,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -30,29 +33,46 @@
                     You can create new classroom for your students. Also you can give homework and marks
                 </div>
                 <input class="page__login__card__inp__username" id="page__login__card__inp__username2" type="text" placeholder="Enter your username">
-                <input class="page__login__card__inp__password" id="page__login__card__inp__password2" type="text" placeholder="Enter your username">
+                <input class="page__login__card__inp__password" id="page__login__card__inp__password2" type="text" placeholder="Enter your password">
                 <button class="page__login__card__btn page__login__card__btn2">Log in</button>
             </div>
         </div>
         <div class="page__main__header">
             <div class="page__main__header__pages">
+                
                 <div class="page__main__header__pos">Classess</div>
+             
         </div>
             <div class="page__main__header__user">User</div>
         </div>
         <div class="page__main">
-            <div class="page__main__middlle__name__page">Classess</div>
+            <div class="page__main__top">
+                <div class="probka"></div>
+                <div class="page__main__middlle__name__page">Classess</div>
+                <div class="page__main__pages__addNewClass">
+                    <img id="page__main__pages__addNewClass__img" class="page__main__pages__addNewClass__img" src="./img/plus.png" alt="">
+                    <!-- <div class="page__main__pages__addNewClass__text">Add New class</div> -->
+                </div>
+            </div>
+           
             <div class="page__main__middlle">
                 
-                <div class="page__main__middlle__your__classess">
+                 <!-- <div class="page__main__middlle__your__classess" >
                    
                         <div class="page__main__middlle__your__classess__class__name">Class: 9-V</div>
                         <div class="page__main__middlle__your__classess__class__lesson">Lesson: English</div>
                         <div class="page__main__middlle__your__classess__class__students">Students: 18</div>
                     </div>
+                 -->
                 
             </div>
         </div>
+    </div>
+    <div class="box__enter__class">
+        Create new class
+        <input class="box__enter__class__inp" id="box__enter__class__nameOfClass" type="text" placeholder="Enter name of class">
+        <input class="box__enter__class__inp" id="box__enter__class__nameOfLesson" type="text" placeholder="Enter name of lesson">
+        <button class="box__enter__class__btn" id="box__enter__class__btn">Create</button>
     </div>
     <script src="main.js"></script>
 </body>
